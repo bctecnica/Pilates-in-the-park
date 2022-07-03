@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     /* outline: red 1px solid; */
 }
+
 body {
     position: relative;
     max-width: 1400px;
@@ -41,6 +42,7 @@ a {
 .nav-links a,
 .nav-links button {
     margin-left: 1.6rem;
+    display: none;
 }
 .hover-underline-animation {
     display: inline-block;
@@ -376,6 +378,26 @@ header {
     media queries 
 //////////////////*/
 @media screen and (max-width: 992px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    nav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0rem;
+        min-height: 8vh;
+        z-index: 10;
+    }
+    .nav-links a,
+    .nav-links button {
+        display: none;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
     header {
         height: 55vh;
     }
@@ -385,10 +407,50 @@ header {
         padding: 4rem;
         font-size: 1.2rem;
     }
+    .main-blob-svg1 {
+        transform: rotate(270deg) scale(0.3);
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        z-index: 2;
+    }
+    .main-blob-svg2 {
+        transform: rotate(160deg) scale(0.5);
+        position: absolute;
+        top: -12%;
+        left: 55%;
+        z-index: 2;
+    }
+    .sub-blob-svg3 {
+        transform: rotate(90deg) scale(0.4);
+        position: absolute;
+        top: 8%;
+        left: 35%;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .sub-blob-svg4 {
+        transform: rotate(90deg) scale(0.3);
+        position: absolute;
+        top: -35%;
+        left: 15%;
+        z-index: 1;
+        opacity: 0.2;
+        transform: scale(0.3);
+    }
+    .sub-blob-svg5 {
+        transform: rotate(90deg) scale(0.3);
+        position: absolute;
+        top: 5%;
+        left: -36%;
+        z-index: 1;
+        opacity: 0.2;
+        transform: scale(0.4);
+    }
     .plantpot-container {
         display: block;
         position: relative;
-        height: 100vh;
+        height: 900px;
         margin-top: 0rem;
         margin-bottom: 2rem;
     }
@@ -435,6 +497,10 @@ header {
     .left {
         margin-left: 0rem;
     }
+    .footer__addr {
+        margin-bottom: 3em;
+        text-align: center;
+    }
     .footer-blob {
         left: -20%;
         top: 26%;
@@ -442,19 +508,22 @@ header {
     }
     .nav__title {
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 600;
         color: white;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         background-image: none;
         background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: white;
     }
     .nav__item:nth-child(3) {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
     .footer__nav {
-        margin-left: 3rem;
+        text-align: center;
+    }
+    .nav__ul a {
+        color: white;
     }
 }
