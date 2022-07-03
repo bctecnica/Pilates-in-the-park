@@ -5,6 +5,11 @@
     font-family: "Poppins", sans-serif;
     /* outline: red 1px solid; */
 }
+body{
+  position: relative;
+  max-width: 1350px;
+  margin:    0 auto;
+}
 a,
 button,
 h1,
@@ -60,8 +65,7 @@ a {
 
 /* HEADER */
 header {
-    height: 120vh;
-    width: 100vw;
+    height: 750px;
     overflow: hidden;
     position: relative;
 }
@@ -84,49 +88,53 @@ header {
 #header-button {
     margin-left: 5rem !important;
 }
+
+/* BLOBS */
 .main-blob-svg1 {
     transform: rotate(270deg) scale(0.65);
     position: absolute;
-    top: -45rem;
-    left: -30rem;
+    top: -70%;
+    left: -25%;
     z-index: 2;
 }
 .main-blob-svg2 {
     transform: rotate(160deg) scale(0.5);
     position: absolute;
-    top: -12rem;
-    left: 38rem;
+    top: -12%;
+    left: 55%;
     z-index: 2;
 }
 .sub-blob-svg3 {
     transform: rotate(90deg) scale(0.4);
     position: absolute;
-    top: -0rem;
-    left: 17rem;
+    top: 8%;
+    left: 35%;
     z-index: 1;
     opacity: 0.2;
 }
 .sub-blob-svg4 {
     transform: rotate(90deg) scale(0.3);
     position: absolute;
-    top: -22rem;
-    left: 0rem;
+    top: -35%;
+    left: 15%;
     z-index: 1;
     opacity: 0.2;
+    transform: scale(0.3);
 }
 .sub-blob-svg5 {
     transform: rotate(90deg) scale(0.3);
     position: absolute;
-    top: 0rem;
-    left: -45rem;
+    top: 5%;
+    left: -36%;
     z-index: 1;
     opacity: 0.2;
+    transform: scale(.4);
 }
 .header-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     top: 45%;
-    left: 25%;
+    left: 26%;
     transform: translateY(-50%);
     z-index: 3;
 }
@@ -148,11 +156,14 @@ header {
 /* PLANT */
 .plantpot-container {
     display: grid;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    height: 90vh;
+    height: 650px;
     margin-top: 10rem;
 }
 .plant-text {
+  max-width: 800px;
     grid-column: 1;
     margin-top: 5rem;
     padding-left: 5rem;
@@ -208,6 +219,7 @@ header {
     padding: 2rem 0rem;
     width: 90%;
     margin: auto;
+    margin-top: 5rem;
     row-gap: 5rem;
     column-gap: 4rem;
 }
@@ -258,20 +270,24 @@ header {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    padding: 150px 30px 10px 30px;
+    padding: 150px 30px 20px 30px;
     overflow: hidden;
 }
 .footer-blob {
     position: absolute;
-    left: -8%;
-    top: -0%;
+    left: -10%;
+    top: 10%;
     z-index: -1;
     transform: rotate(220deg);
+    transform: scale(1.1);
 }
 .footer p {
     color: white;
     font-size: 1.2rem;
     font-weight: 100;
+}
+.footer-text {
+  max-width: 390px;
 }
 .footer > * {
     flex: 1 100%;
@@ -298,7 +314,7 @@ header {
 }
 .footer ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0rem;
 }
 .footer li {
     line-height: 2em;
@@ -309,6 +325,7 @@ header {
 .footer__nav {
     display: flex;
     flex-flow: row wrap;
+    margin-left: 2rem;
 }
 .footer__nav > * {
     flex: 1 50%;
@@ -407,4 +424,7 @@ header {
         left: -10%;
         transform: scale(0.9);
     }
+    .gallery {
+      grid-template-columns: 1fr;
+  }
 }
