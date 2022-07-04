@@ -42,7 +42,6 @@ a {
 .nav-links a,
 .nav-links button {
     margin-left: 1.6rem;
-    display: none;
 }
 .hover-underline-animation {
     display: inline-block;
@@ -369,6 +368,9 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    justify-content: center;
+    max-width: 200px;
+    margin: auto;
 }
 .nav__ul-grid > * {
     transform: scale(0.8);
@@ -399,7 +401,7 @@ header {
         font-size: 1.2rem;
     }
     header {
-        height: 55vh;
+        height: 1000px;
     }
     .header-text {
         top: 70%;
@@ -450,7 +452,7 @@ header {
     .plantpot-container {
         display: block;
         position: relative;
-        height: 900px;
+        height: 950px;
         margin-top: 0rem;
         margin-bottom: 2rem;
     }
@@ -502,15 +504,14 @@ header {
         text-align: center;
     }
     .footer-blob {
-        left: -20%;
-        top: 26%;
+        left: -23%;
+        top: 27%;
         transform: scale(1.8) rotate(202deg);
     }
     .nav__title {
         font-size: 1.2rem;
         font-weight: 600;
         color: white;
-        margin-bottom: 0.5rem;
         background-image: none;
         background-clip: initial;
         -webkit-background-clip: text;
@@ -526,4 +527,11 @@ header {
     .nav__ul a {
         color: white;
     }
+    .nav__ul-grid {
+      max-width: 200px;
+      margin: auto;
+  }
+    .nav__ul-grid > * {
+      transform: scale(0.9);
+  }
 }
