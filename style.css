@@ -500,9 +500,8 @@ header {
     }
     .plantpot-container {
         display: block;
-        height: 950px;
+        height: 900px;
         margin-top: -1rem;
-        margin-bottom: 2rem;
     }
     .plant-text {
         grid-column: none;
