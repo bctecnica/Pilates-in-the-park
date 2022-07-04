@@ -13,7 +13,7 @@ body {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-}
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;}
 a,
 button,
 h1,
@@ -158,14 +158,6 @@ header {
 .logo-container {
     position: relative;
 }
-/* blobs */
-/* .main-blob-svg1 {
-    transform: rotate(270deg) scale(0.65);
-    position: absolute;
-    top: -70%;
-    left: -25%;
-    z-index: 2;
-} */
 .main-blob-svg1 {
     transform: rotate(270deg) scale(0.65);
     position: absolute;
@@ -359,9 +351,6 @@ header {
     font-size: 1.2rem;
     font-weight: 100;
 }
-/* .footer-text {
-    max-width: 390px;
-} */
 .footer > * {
     flex: 1 100%;
 }
@@ -369,7 +358,6 @@ header {
     margin-left: 10rem;
 }
 .footer__addr {
-    /* padding-left: 1rem; */
     margin-bottom: 2em;
 }
 .footer__logo {
@@ -486,7 +474,7 @@ header {
     .main-blob-svg1 {
         transform: rotate(270deg) scale(0.32);
         top: -1900%;
-        left: -311%;
+        left: -300%;
     }
     .main-blob-svg2 {
         transform: rotate(160deg) scale(0.3);
