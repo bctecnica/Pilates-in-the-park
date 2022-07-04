@@ -5,7 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Chilled Grape</title>
-        <link rel="icon" type="image/x-icon" href="/images/chilled-grap-logo.png">
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/images/chilled-grap-logo.png"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,8 +24,34 @@
         <!-- TOP NAV -->
         <nav>
             <!-- desktop nav -->
-            <div class="logo-container">
-                <svg
+            <h2 class="logo">Chilled Grape</h2>
+            <div class="nav-links">
+                <a href="#" class="hover-underline-animation">Home</a>
+                <a href="#" class="hover-underline-animation">About</a>
+                <a href="#" class="hover-underline-animation">Blog</a>
+                <a href="#" class="hover-underline-animation">Pricing</a>
+                <button id="header-button" class="small-button">Login</button>
+            </div>
+            <!-- mobile nav -->
+            <div id="mySidepanel" class="sidepanel">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Pricing</a>
+                <button class="small-button sidepanel-btn">Login</button>
+            </div>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </nav>
+        <!-- HEADER -->
+        <header>
+            <!-- background blobs -->
+            <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
@@ -55,31 +85,6 @@
                     ></animate>
                 </path>
             </svg>
-            <h2 class="logo">Chilled Grape</h2>
-            </div>
-
-            <div class="nav-links">
-                <a href="#" class="hover-underline-animation">Home</a>
-                <a href="#" class="hover-underline-animation">About</a>
-                <a href="#" class="hover-underline-animation">Blog</a>
-                <a href="#" class="hover-underline-animation">Pricing</a>
-                <button id="header-button" class="small-button">Login</button>
-            </div>
-            <!-- mobile nav -->
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Pricing</a>
-                <button class="small-button sidepanel-btn">Login</button>
-              </div>
-              <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </nav>
-        <!-- HEADER -->
-        <header>
-            <!-- background blobs -->
-            
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +249,9 @@
         <!-- FOOTER NAV -->
         <footer class="footer">
             <div class="footer__addr">
-                <h1 class="logo" style="margin-bottom: 1rem; font-size: 2.2rem;">Chilled grape</h1>
+                <h1 class="logo" style="margin-bottom: 1rem; font-size: 2.2rem">
+                    Chilled grape
+                </h1>
                 <p class="footer-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
