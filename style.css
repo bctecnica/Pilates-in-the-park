@@ -472,7 +472,7 @@ header {
         font-size: 1.2rem;
     }
     .main-blob-svg1 {
-        transform: rotate(270deg) scale(0.32);
+        transform: rotate(270deg) scale(0.35);
         top: -1900%;
         left: -300%;
     }
