@@ -93,11 +93,12 @@ a {
     z-index: 1;
     top: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(10px) contrast(100%);
     -webkit-backdrop-filter: blur(10px) contrast(100%);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
