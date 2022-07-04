@@ -5,7 +5,10 @@
     font-family: "Poppins", sans-serif;
     /* outline: red 1px solid; */
 }
-
+html,
+body {
+    overflow-x: hidden;
+}
 body {
     position: relative;
     max-width: 1400px;
@@ -152,13 +155,23 @@ header {
 #header-button {
     margin-left: 5rem !important;
 }
+.logo-container {
+    position: relative;
+}
 /* blobs */
-.main-blob-svg1 {
+/* .main-blob-svg1 {
     transform: rotate(270deg) scale(0.65);
     position: absolute;
     top: -70%;
     left: -25%;
     z-index: 2;
+} */
+.main-blob-svg1 {
+    transform: rotate(270deg) scale(0.65);
+    position: absolute;
+    top: -1000%;
+    left: -170%;
+    z-index: -1;
 }
 .main-blob-svg2 {
     transform: rotate(160deg) scale(0.5);
@@ -346,9 +359,9 @@ header {
     font-size: 1.2rem;
     font-weight: 100;
 }
-.footer-text {
+/* .footer-text {
     max-width: 390px;
-}
+} */
 .footer > * {
     flex: 1 100%;
 }
@@ -356,7 +369,7 @@ header {
     margin-left: 10rem;
 }
 .footer__addr {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     margin-bottom: 2em;
 }
 .footer__logo {
@@ -443,10 +456,6 @@ header {
     media queries 
 //////////////////*/
 @media screen and (max-width: 992px) {
-    html,
-    body {
-        overflow-x: hidden;
-    }
     nav {
         margin-top: 0rem;
     }
@@ -476,8 +485,8 @@ header {
     }
     .main-blob-svg1 {
         transform: rotate(270deg) scale(0.32);
-        top: -75%;
-        left: -101%;
+        top: -1900%;
+        left: -311%;
     }
     .main-blob-svg2 {
         transform: rotate(160deg) scale(0.3);
@@ -553,9 +562,9 @@ header {
         text-align: center;
     }
     .footer-blob {
-        left: -23%;
-        top: 27%;
-        transform: scale(1.8) rotate(202deg);
+        left: 0%;
+        top: 30%;
+        transform: scale(2) rotate(202deg);
     }
     .nav__title {
         font-weight: 600;
