@@ -18,12 +18,8 @@
     <body>
         <!-- TOP NAV -->
         <nav>
+            <!-- desktop nav -->
             <h2 class="logo">Chilled Grape</h2>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
             <div class="nav-links">
                 <a href="#" class="hover-underline-animation">Home</a>
                 <a href="#" class="hover-underline-animation">About</a>
@@ -31,6 +27,16 @@
                 <a href="#" class="hover-underline-animation">Pricing</a>
                 <button id="header-button" class="small-button">Login</button>
             </div>
+            <!-- mobile nav -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Pricing</a>
+                <button class="small-button sidepanel-btn">Login</button>
+              </div>
+              <button class="openbtn" onclick="openNav()">&#9776;</button>
         </nav>
         <!-- HEADER -->
         <header>

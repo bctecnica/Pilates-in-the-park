@@ -81,6 +81,50 @@ a {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+/* side panel menu */
+.sidepanel {
+    height: 350px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: grey;
+    padding: 10px 15px;
+    border: none;
+}
+.sidepanel-btn {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
 
 /* HEADER */
 header {
@@ -405,6 +449,9 @@ header {
     nav {
         margin-top: 0rem;
     }
+    .openbtn {
+        display: block;
+    }
     .nav-links a,
     .nav-links button {
         display: none;
@@ -454,7 +501,7 @@ header {
     .plantpot-container {
         display: block;
         height: 950px;
-        margin-top: 0rem;
+        margin-top: -2rem;
         margin-bottom: 2rem;
     }
     .plant-text {
