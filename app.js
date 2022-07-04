@@ -22,7 +22,7 @@ async function generateProductCards() {
             productCard.classList.add("gallery-img");
             productCard.innerHTML = `
                   <div class="card">
-                    <img src=${data[0][i].image}></img>
+                    <img src=${data[0][i].image} alt=${data[0][i].product_name}></img>
                     <div class="card-text">
                       <h4><b>${data[0][i].product_name}</b></h4>
                       <p>£${data[0][i].price.toFixed(2)}</p>

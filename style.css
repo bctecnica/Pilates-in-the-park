@@ -41,7 +41,7 @@ a {
 }
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 0.75rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -50,14 +50,13 @@ a {
     height: 21px;
     margin-top: 1rem;
     margin-right: 1rem;
-  }
-  
-  .toggle-button .bar {
+}
+.toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: black;
     border-radius: 10px;
-  }
+}
 .nav-links a,
 .nav-links button {
     margin-left: 1.6rem;
@@ -245,7 +244,7 @@ header {
     object-fit: cover;
 }
 .more {
-    color: #5c6dde;
+    color: #4f5a94;
     margin-top: 2rem;
     margin-left: 4.5rem;
     margin-bottom: 7rem;
@@ -399,18 +398,12 @@ header {
     media queries 
 //////////////////*/
 @media screen and (max-width: 992px) {
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
     }
     nav {
-        position: absolute;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         margin-top: 0rem;
-        min-height: 8vh;
-        z-index: 10;
     }
     .nav-links a,
     .nav-links button {
@@ -435,46 +428,31 @@ header {
     }
     .main-blob-svg1 {
         transform: rotate(270deg) scale(0.32);
-        position: absolute;
         top: -75%;
         left: -102%;
-        z-index: 2;
     }
     .main-blob-svg2 {
         transform: rotate(160deg) scale(0.3);
-        position: absolute;
         top: 14%;
         left: -142%;
-        z-index: 2;
     }
     .sub-blob-svg3 {
         transform: rotate(90deg) scale(0.2);
-        position: absolute;
         top: -38%;
         left: -51%;
-        z-index: 1;
-        opacity: 0.2;
     }
     .sub-blob-svg4 {
         transform: rotate(90deg) scale(0.2);
-        position: absolute;
         top: -26%;
         left: -112%;
-        z-index: 1;
-        opacity: 0.2;
     }
     .sub-blob-svg5 {
         transform: rotate(90deg) scale(0.2);
-        position: absolute;
         top: 0%;
         left: -23%;
-        z-index: 1;
-        opacity: 0.2;
-        transform: scale(0.4);
     }
     .plantpot-container {
         display: block;
-        position: relative;
         height: 950px;
         margin-top: 0rem;
         margin-bottom: 2rem;
@@ -493,16 +471,11 @@ header {
         transform: scale(0.6);
     }
     .blob-img {
-        position: relative;
-        top: 0;
         left: -20%;
-        transform: scale(0.9);
     }
     .plant-img {
-        position: absolute;
         top: -270px;
         left: -10%;
-        transform: scale(0.9);
     }
     .gallery {
         grid-template-columns: 1fr;
@@ -532,7 +505,6 @@ header {
         transform: scale(1.8) rotate(202deg);
     }
     .nav__title {
-        font-size: 1.2rem;
         font-weight: 600;
         color: white;
         background-image: none;
@@ -551,10 +523,10 @@ header {
         color: white;
     }
     .nav__ul-grid {
-      max-width: 200px;
-      margin: auto;
-  }
+        max-width: 200px;
+        margin: auto;
+    }
     .nav__ul-grid > * {
-      transform: scale(0.9);
-  }
+        transform: scale(0.9);
+    }
 }
