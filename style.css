@@ -10,7 +10,7 @@ body {
 }
 body {
     position: relative;
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -65,11 +65,11 @@ a {
 .nav-links button {
     margin-left: 1.6rem;
 }
-a {
+.hover-underline-animation {
     display: inline-block;
     position: relative;
 }
-a:after {
+.hover-underline-animation:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -81,7 +81,7 @@ a:after {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-a:hover:after {
+.hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
