@@ -10,10 +10,10 @@ body {
 }
 body {
     position: relative;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
 }
 a,
 button,
@@ -272,19 +272,9 @@ header {
     text-decoration: none;
     color: black;
 }
-.gallery-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: gray;
-    padding: 0.5rem 0rem;
-}
-.gallery-info a {
-    color: gray;
-}
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     padding: 2rem 0rem;
     width: 90%;
     margin: auto;
@@ -300,7 +290,7 @@ header {
 .more {
     color: #4f5a94;
     margin-top: 2rem;
-    margin-left: 4.5rem;
+    margin-left: 6%;
     margin-bottom: 7rem;
     border: none;
     font-size: 1.2rem;
@@ -341,10 +331,12 @@ header {
     flex-flow: row wrap;
     padding: 150px 30px 20px 30px;
     overflow: hidden;
+    margin: 0 auto;
+    /* max-width: 1500px; */
 }
 .footer-blob {
     position: absolute;
-    left: -10%;
+    left: -9%;
     top: 10%;
     z-index: -1;
     transform: rotate(220deg);
@@ -362,7 +354,9 @@ header {
     margin-left: 10rem;
 }
 .footer__addr {
+    margin: 0 auto;
     margin-bottom: 2em;
+    max-width: 400px;
 }
 .footer__logo {
     font-weight: 400;
@@ -439,7 +433,7 @@ header {
     grid-row-gap: 0px;
     justify-content: center;
     max-width: 200px;
-    margin: auto;
+    /* margin: auto; */
 }
 .nav__ul-grid > * {
     transform: scale(0.8);
@@ -538,12 +532,6 @@ header {
         left: 50%;
         transform: translate(-48%, -75%);
     }
-    .gallery {
-        grid-template-columns: 1fr;
-        width: 90%;
-        margin-top: 1rem;
-        row-gap: 2rem;
-    }
     .more {
         margin-top: 0rem;
         margin-left: 2rem;
@@ -566,6 +554,7 @@ header {
         transform: scale(2) rotate(202deg);
     }
     .nav__title {
+        margin-top: 1rem;
         font-weight: 600;
         color: white;
         background-image: none;
@@ -573,10 +562,10 @@ header {
         -webkit-background-clip: text;
         -webkit-text-fill-color: white;
     }
-    .nav__item:nth-child(3) {
+    /* .nav__item:nth-child(3) {
         margin-top: 2rem;
         margin-bottom: 1.5rem;
-    }
+    } */
     .footer__nav {
         text-align: center;
     }
