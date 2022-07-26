@@ -10,10 +10,7 @@ body {
 }
 body {
     position: relative;
-    /* max-width: 1440px; */
     margin: 0 auto;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
 }
 a,
 button,
@@ -42,6 +39,7 @@ a {
     font-weight: 500;
     color: black;
     font-size: 1rem;
+    position: relative;
 }
 .toggle-button {
     position: absolute;
@@ -159,14 +157,10 @@ header {
 #header-button {
     margin-left: 5rem !important;
 }
-.logo-container {
-    position: relative;
-}
 .main-blob-svg1 {
-    transform: rotate(270deg) scale(0.7) translate(130%, -142%);
+    transform: rotate(270deg) scale(0.6) translate(8%, -50%);
     position: absolute;
-    top: 48%;
-    left: 52%;
+    left: 0;
     z-index: -1;
 }
 .main-blob-svg2 {
@@ -197,7 +191,7 @@ header {
     transform: rotate(90deg) scale(0.3);
     position: absolute;
     top: 5%;
-    left: -36%;
+    left: -30%;
     z-index: 1;
     opacity: 0.2;
     transform: scale(0.4);
@@ -265,6 +259,7 @@ header {
     top: -270px;
     left: 6%;
     transform: scale(0.9);
+    filter: drop-shadow(4px 5px 8px #222);
 }
 
 /* PRODUCT GALLERY */
@@ -290,7 +285,7 @@ header {
 .more {
     color: #4f5a94;
     margin-top: 2rem;
-    margin-left: 6%;
+    margin-left: 5.5%;
     margin-bottom: 7rem;
     border: none;
     font-size: 1.2rem;
@@ -338,7 +333,7 @@ header {
 }
 .footer-blob {
     position: absolute;
-    left: -9%;
+    left: -8%;
     top: 10%;
     z-index: -1;
     transform: rotate(220deg);
@@ -483,29 +478,19 @@ header {
         font-size: 1.2rem;
     }
     .main-blob-svg1 {
-        transform: rotate(270deg) scale(0.4);
-        top: -78%;
-        left: -103%;
+        transform: rotate(270deg) scale(0.4) translate(10%, -100%);
     }
     .main-blob-svg2 {
-        transform: rotate(160deg) scale(0.3);
-        top: 14%;
-        left: -142%;
+        transform: rotate(160deg) scale(0.3) translate(60%, 90%);
     }
     .sub-blob-svg3 {
-        transform: rotate(90deg) scale(0.2);
-        top: -38%;
-        left: -51%;
+        transform: rotate(90deg) scale(0.2) translate(-25%, 180%);
     }
     .sub-blob-svg4 {
-        transform: rotate(90deg) scale(0.2);
-        top: -26%;
-        left: -112%;
+        transform: rotate(90deg) scale(0.2) translate(15%, 220%);
     }
     .sub-blob-svg5 {
-        transform: rotate(90deg) scale(0.2);
-        top: 0%;
-        left: -23%;
+        transform: rotate(90deg) scale(0.2) translate(10%, 200%);
     }
     .plantpot-container {
         display: block;
@@ -514,7 +499,8 @@ header {
     }
     .plant-text {
         grid-column: none;
-        margin-top: -4rem;
+        margin: 0 auto;
+        margin-top: -2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -593,6 +579,7 @@ header {
     }
     .bctecnica {
         margin-top: -0.1rem;
+        padding-top: 1rem;
         display: block;
         text-align: center;
         color: white;
