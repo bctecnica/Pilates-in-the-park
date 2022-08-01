@@ -319,6 +319,20 @@ header {
     border-radius: 1rem;
 }
 
+
+/* GOOGLE MAPS */
+#map {
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
 /* FOOTER NAV*/
 .wave-svg {
     display: none;
