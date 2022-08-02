@@ -20,6 +20,11 @@ h3,
 h4 {
     color: rgb(40, 40, 40);
 }
+.section-title {
+    font-size: 1.8rem;
+    width: 90%;
+    margin: 0 auto;
+}
 
 /* TOP NAV */
 nav {
@@ -227,6 +232,7 @@ header {
     position: relative;
     height: 650px;
     margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 .plant-text {
     max-width: 800px;
@@ -273,7 +279,6 @@ header {
     padding: 2rem 0rem;
     width: 90%;
     margin: auto;
-    margin-top: 5rem;
     row-gap: 5rem;
     column-gap: 4rem;
 }
@@ -319,19 +324,53 @@ header {
     border-radius: 1rem;
 }
 
-
 /* GOOGLE MAPS */
 #map {
     height: 500px;
     width: 90%;
-    margin: 0 auto;
-  }
-
-
-
-
-
-
+    margin: 2rem auto;
+}
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    width: 90%;
+    margin: auto;
+}
+.location-card {
+    display: flex;
+    flex: 1 0 30%;
+    margin-bottom: 3rem;
+}
+.location-img {
+    height: 230px;
+    width: 180px;
+    margin-right: -1rem;
+    background-color: pink;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    z-index: 3;
+}
+.location-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    width: 350px;
+    height: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+.location-card-info > * {
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+.inline-svg {
+    display: inline;
+    margin-bottom: -0.5rem;
+    padding: 0 1rem 0 0;
+}
 
 /* FOOTER NAV*/
 .wave-svg {
@@ -542,6 +581,27 @@ header {
         margin-left: 2rem;
         margin-bottom: 3rem;
         align-self: center;
+    }
+    .locations {
+        justify-content: space-evenly;
+    }
+    .location-card {
+        flex: none;
+    }
+    .location-card-info {
+        width: 200px;
+        height: 220px;
+    }
+    .inline-svg {
+        display: block;
+        margin-bottom: 0;
+        padding: 0 1rem 0 0;
+    }
+    .location-card-info h2 {
+        font-size: 0.9rem;
+    }
+    .location-card-info p {
+        font-size: 0.7rem;
     }
     .wave-svg {
         display: block;
