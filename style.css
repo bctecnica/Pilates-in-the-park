@@ -327,7 +327,7 @@ header {
 /* GOOGLE MAPS */
 #map {
     height: 500px;
-    width: 90%;
+    width: 85%;
     margin: 0rem auto;
     margin-bottom: 4rem;
 }
@@ -340,8 +340,8 @@ header {
     margin: auto;
 }
 .location-card {
+    margin: auto;
     display: flex;
-    flex: 1 0 30%;
     margin-bottom: 3rem;
 }
 .location-img {
