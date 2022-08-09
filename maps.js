@@ -24,7 +24,7 @@ function initMap() {
             "<h1>Meyrick Park</h1><h2>Tuesday, Thursday</h2><h3>13:00-14:30</h3>",
     });
     addMarker({
-        coords: { lat: 50.7370, lng: -2.0306 },
+        coords: { lat: 50.7366, lng: -2.0111 },
         content:
             "<h1>Upton</h1><h2>Wednesday, Friday</h2><h3>12:00-13:00</h3>",
     });
