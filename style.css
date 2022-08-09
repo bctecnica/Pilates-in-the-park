@@ -328,7 +328,8 @@ header {
 #map {
     height: 500px;
     width: 90%;
-    margin: 2rem auto;
+    margin: 0rem auto;
+    margin-bottom: 4rem;
 }
 .locations {
     display: flex;
@@ -370,6 +371,7 @@ header {
     display: inline;
     margin-bottom: -0.5rem;
     padding: 0 1rem 0 0;
+    max-width: 40px;
 }
 
 /* FOOTER NAV*/

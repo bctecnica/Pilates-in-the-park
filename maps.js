@@ -21,12 +21,12 @@ function initMap() {
     addMarker({
         coords: { lat: 50.727, lng: -1.888 },
         content:
-            "<h1>Meyrick Park</h1><h2>Tuesday, Thursday</h2><h3>13:00-14:00</h3>",
+            "<h1>Meyrick Park</h1><h2>Tuesday, Thursday</h2><h3>13:00-14:30</h3>",
     });
     addMarker({
-        coords: { lat: 50.7395, lng: -1.845 },
+        coords: { lat: 50.7370, lng: -2.0306 },
         content:
-            "<h1>Queens Park</h1><h2>Wednesday, Friday</h2><h3>12:00-13:00</h3>",
+            "<h1>Upton</h1><h2>Wednesday, Friday</h2><h3>12:00-13:00</h3>",
     });
     addMarker({
         coords: { lat: 50.7345, lng: -1.8379 },
