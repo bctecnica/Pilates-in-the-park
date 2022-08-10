@@ -2,7 +2,7 @@
 function initMap() {
     // The map, centered in Bournemouth
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
+        zoom: 12,
         center: { lat: 50.7402, lng: -1.8885 },
     });
 

@@ -211,6 +211,7 @@ header {
 }
 .title {
     text-transform: uppercase;
+    font-size: 3rem;
 }
 .large-button {
     margin-top: 1rem;
@@ -231,7 +232,7 @@ header {
     align-items: center;
     position: relative;
     height: 650px;
-    margin-top: 8rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
 }
 .plant-text {
