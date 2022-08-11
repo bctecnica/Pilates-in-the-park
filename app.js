@@ -1,7 +1,7 @@
 // ---NAV---
 /* open/close nav */
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "210px";
+    document.getElementById("mySidepanel").style.width = "220px";
 }
   
 function closeNav() {
