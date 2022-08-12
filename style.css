@@ -7,6 +7,8 @@
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 body {
     position: relative;
@@ -146,7 +148,7 @@ header {
 .logo {
     color: white;
     text-shadow: -0.1px 0 black, 0 0.1px black, 0.1px 0 black, 0 -0.1px black;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -164,7 +166,7 @@ header {
     margin-left: 5rem !important;
 }
 .main-blob-svg1 {
-    transform: rotate(270deg) scale(0.6) translate(8%, -50%);
+    transform: rotate(270deg) scale(0.6) translate(7%, -48%);
     position: absolute;
     left: 0;
     z-index: -1;
@@ -488,6 +490,7 @@ header {
 .nav__ul-grid > * {
     transform: scale(0.8);
     transition: transform 0.25s ease-out;
+    filter: drop-shadow(2px 2px 4px rgb(100, 100, 100));
 }
 .nav__ul-grid li:hover {
     transform: scale(1);
@@ -528,7 +531,7 @@ header {
         width: 100%;
     }
     .header-text {
-        top: 50%;
+        top: 46%;
         left: 0;
         padding: 4rem;
         font-size: 1.2rem;
@@ -550,8 +553,8 @@ header {
     }
     .plantpot-container {
         display: block;
-        height: 1000px;
-        margin-top: -4rem;
+        height: 1020px;
+        margin-top: -6rem;
     }
     .plant-text {
         grid-column: none;
@@ -579,6 +582,10 @@ header {
         left: 50%;
         transform: scale(.5) translate(-100%, -100%);
     }
+    #map {
+        margin-top: -2rem;
+        margin-bottom: 5rem;
+    }
     .more {
         margin-top: 0rem;
         margin-left: 2rem;
@@ -599,6 +606,7 @@ header {
         display: block;
         margin-bottom: 0;
         padding: 0 1rem 0 0;
+        max-width: 32px;
     }
     .location-card-info h2 {
         font-size: 0.9rem;
