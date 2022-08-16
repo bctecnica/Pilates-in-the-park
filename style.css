@@ -490,7 +490,7 @@ header {
 .nav__ul-grid > * {
     transform: scale(0.8);
     transition: transform 0.25s ease-out;
-    filter: drop-shadow(2px 2px 4px rgb(100, 100, 100));
+    filter: drop-shadow(2px 2px 4px rgb(150, 150, 150));
 }
 .nav__ul-grid li:hover {
     transform: scale(1);

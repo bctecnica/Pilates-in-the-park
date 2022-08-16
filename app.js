@@ -3,26 +3,22 @@
 function openNav() {
     document.getElementById("mySidepanel").style.width = "220px";
 }
-  
+
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
 }
 
-
 // ---PRODUCT CARDS---
+import {apiCall} from "./productAPI.js"
 const gallery = document.querySelector(".gallery");
 const more = document.querySelector(".more");
 
 // used to keep track of the latest product rendered from array
 var renderedCard = 0;
 
-// gets data from api
-async function getData() {
-    const dataFetch = await fetch(
-        "https://my-json-server.typicode.com/TomSearle/cb-devtest-api/products"
-    );
-    const data = await dataFetch.json();
-    return data;
+// gets data from spoofed api - originally from backend API
+function getData() {
+    return apiCall;
 }
 
 // renders 6 product cards at a time from api fetch
@@ -34,7 +30,9 @@ async function generateProductCards() {
             productCard.classList.add("gallery-img");
             productCard.innerHTML = `
                   <div class="card">
-                    <img src=${data[0][i].image} alt=${data[0][i].product_name}></img>
+                    <img src=${data[0][i].image} alt=${
+                data[0][i].product_name
+            }></img>
                     <div class="card-text">
                       <h4><b>${data[0][i].product_name}</b></h4>
                       <p>£${data[0][i].price.toFixed(2)}</p>
@@ -54,7 +52,3 @@ generateProductCards();
 more.addEventListener("click", () => {
     generateProductCards();
 });
-
-
-
-
