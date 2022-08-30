@@ -12,7 +12,7 @@ closeBTN.addEventListener("click", () => {
 });
 
 // ---PRODUCT CARDS---
-import {apiCall} from "./productAPI.js"
+import { apiCall } from "./productAPI.js";
 const gallery = document.querySelector(".gallery");
 const more = document.querySelector(".more");
 
@@ -28,25 +28,24 @@ function getData() {
 async function generateProductCards() {
     const data = await getData();
     for (let i = renderedCard; i < renderedCard + 6; i++) {
-
-            const productCard = document.createElement("div");
-            productCard.classList.add("gallery-img");
-            productCard.innerHTML = `
+        const productCard = document.createElement("div");
+        productCard.classList.add("gallery-img");
+        productCard.innerHTML = `
                   <div class="card">
                     <img src=${data[0][i].image} alt=${
-                data[0][i].product_name
-            }></img>
+            data[0][i].product_name
+        }></img>
                     <div class="card-text">
                       <h4><b>${data[0][i].product_name}</b></h4>
                       <p>£${data[0][i].price.toFixed(2)}</p>
                     </div>
                   </div> 
                   `;
-            gallery.appendChild(productCard);
-        } 
-        console.log(renderedCard);
+        gallery.appendChild(productCard);
+    }
+    console.log(renderedCard);
     if (renderedCard >= 6) {
-            more.style.display = "none";
+        more.style.display = "none";
     }
     renderedCard += 6;
 }

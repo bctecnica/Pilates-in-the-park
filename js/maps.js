@@ -25,8 +25,7 @@ function initMap() {
     });
     addMarker({
         coords: { lat: 50.7366, lng: -2.0111 },
-        content:
-            "<h1>Upton</h1><h2>Wednesday, Friday</h2><h3>12:00-13:00</h3>",
+        content: "<h1>Upton</h1><h2>Wednesday, Friday</h2><h3>12:00-13:00</h3>",
     });
     addMarker({
         coords: { lat: 50.7345, lng: -1.8379 },

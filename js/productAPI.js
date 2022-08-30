@@ -22,7 +22,6 @@ export const apiCall = [
             price: 3.49,
             stock_count: 20,
         },
-
         {
             id: 3,
             product_name: "Weighted Belt",
