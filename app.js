@@ -28,7 +28,7 @@ function getData() {
 async function generateProductCards() {
     const data = await getData();
     for (let i = renderedCard; i < renderedCard + 6; i++) {
-        try {
+
             const productCard = document.createElement("div");
             productCard.classList.add("gallery-img");
             productCard.innerHTML = `
@@ -43,9 +43,10 @@ async function generateProductCards() {
                   </div> 
                   `;
             gallery.appendChild(productCard);
-        } catch (error) {
+        } 
+        console.log(renderedCard);
+    if (renderedCard >= 6) {
             more.style.display = "none";
-        }
     }
     renderedCard += 6;
 }
