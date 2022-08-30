@@ -1,12 +1,15 @@
 // ---NAV---
-/* open/close nav */
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "220px";
-}
+/* open/close nav buttons */
+const openBTN = document.querySelector(".openbtn");
+const closeBTN = document.querySelector(".closebtn");
 
-function closeNav() {
+openBTN.addEventListener("click", () => {
+    document.getElementById("mySidepanel").style.width = "220px";
+});
+
+closeBTN.addEventListener("click", () => {
     document.getElementById("mySidepanel").style.width = "0";
-}
+});
 
 // ---PRODUCT CARDS---
 import {apiCall} from "./productAPI.js"
