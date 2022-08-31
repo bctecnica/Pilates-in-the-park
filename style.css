@@ -408,7 +408,7 @@ header {
 }
 .footer-blob {
     position: absolute;
-    left: -8%;
+    left: -7%;
     top: 10%;
     z-index: -1;
     transform: rotate(220deg);
@@ -550,7 +550,7 @@ header {
     }
     .header-text {
         top: 46%;
-        left: 0;
+        left: -6px;
         padding: 4rem;
         font-size: 1.2rem;
     }
