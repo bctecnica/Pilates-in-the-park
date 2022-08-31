@@ -38,6 +38,7 @@ async function generateProductCards() {
                     <div class="card-text">
                       <h4><b>${data[0][i].product_name}</b></h4>
                       <p>£${data[0][i].price.toFixed(2)}</p>
+                      <h6>Add To Cart</h6>
                     </div>
                   </div> 
                   `;

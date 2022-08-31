@@ -184,7 +184,7 @@ header {
 .main-blob-svg2 {
     transform: rotate(160deg) scale(0.5);
     position: absolute;
-    top: -12%;
+    top: -18%;
     left: 55%;
     z-index: 2;
 }
@@ -293,7 +293,7 @@ header {
     padding: 2rem 0rem;
     width: 90%;
     margin: auto;
-    row-gap: 5rem;
+    row-gap: 4rem;
     column-gap: 4rem;
 }
 .gallery-img img {
@@ -324,6 +324,12 @@ header {
     font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
+}
+.card h6 {
+    color: rgb(213, 0, 117);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    text-align: end;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -500,7 +506,7 @@ header {
 .nav__ul-grid > * {
     transform: scale(0.8);
     transition: transform 0.25s ease-out;
-    filter: drop-shadow(2px 2px 4px rgba(175, 175, 175, 0.6));
+    filter: drop-shadow(2px 2px 4px rgba(120, 120, 120, 0.6));
 }
 .nav__ul-grid li:hover {
     transform: scale(1);
@@ -555,10 +561,10 @@ header {
         transform: rotate(270deg) scale(0.4) translate(10%, -102%);
     }
     .main-blob-svg2 {
-        transform: rotate(160deg) scale(0.3) translate(60%, 90%);
+        transform: rotate(160deg) scale(0.3) translate(65%, 90%);
     }
     .sub-blob-svg3 {
-        transform: rotate(90deg) scale(0.2) translate(-25%, 180%);
+        transform: rotate(90deg) scale(0.2) translate(-40%, 170%);
     }
     .sub-blob-svg4 {
         transform: rotate(90deg) scale(0.2) translate(15%, 220%);
@@ -676,7 +682,7 @@ header {
     }
     .nav__ul-grid > * {
         transform: scale(0.9);
-        filter: drop-shadow(2px 2px 4px rgba(99, 99, 99, 0.5));
+        filter: drop-shadow(2px 2px 4px rgba(99, 99, 99, 0.3));
     }
     .bctecnica {
         margin-top: -0.2rem;
