@@ -293,8 +293,8 @@ header {
     padding: 2rem 0rem;
     width: 90%;
     margin: auto;
-    row-gap: 4rem;
-    column-gap: 4rem;
+    row-gap: 3rem;
+    column-gap: 3rem;
 }
 .gallery-img img {
     width: 100%;
@@ -339,7 +339,6 @@ header {
 }
 .card img {
     aspect-ratio: 2 / 1.6;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
 }
 
@@ -349,6 +348,8 @@ header {
     width: 85%;
     margin: 0rem auto;
     margin-bottom: 4rem;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .locations {
     display: flex;
@@ -634,6 +635,9 @@ header {
     }
     .location-card-info p {
         font-size: 0.7rem;
+    }
+    .gallery {
+        row-gap: 2.5rem;
     }
     #shop {
         font-size: 1.6rem;
