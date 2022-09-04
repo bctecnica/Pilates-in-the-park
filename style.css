@@ -26,6 +26,10 @@ h4 {
     font-size: 1.8rem;
     width: 90%;
     margin: 0 auto;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1px;
 }
 
 /* TOP NAV */
@@ -42,10 +46,10 @@ nav {
 }
 nav,
 a {
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 500;
     color: black;
-    font-size: 1rem;
     position: relative;
 }
 .toggle-button {
@@ -81,10 +85,10 @@ a {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1.5px;
     bottom: -0px;
     left: 0;
-    background-color: black;
+    background-color: grey;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -152,7 +156,6 @@ header {
 }
 .logo {
     color: white;
-    /* text-shadow: -0.1px 0 black, 0 0.1px black, 0.1px 0 black, 0 -0.1px black; */
     font-size: 1.2rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -281,6 +284,26 @@ header {
     transform: scale(0.6);
     filter: drop-shadow(4px 5px 8px #222);
 }
+#hero-blob {
+    animation: breathing 8s ease-out infinite normal;
+}
+@keyframes breathing {
+    0% {
+        transform: scale(0.9);
+    }
+
+    20% {
+        transform: scale(1.03);
+    }
+
+    60% {
+        transform: scale(1.01);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+}
 
 /* PRODUCT GALLERY */
 #logo {
@@ -303,8 +326,8 @@ header {
 }
 .more {
     color: rgb(213, 0, 117);
-    margin-top: 2rem;
-    margin-left: 5.5%;
+    margin-top: 1rem;
+    margin-left: 6%;
     border: none;
     font-size: 1.2rem;
     font-weight: 500;
@@ -347,9 +370,10 @@ header {
     height: 600px;
     width: 87%;
     margin: 0rem auto;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     border-radius: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .locations {
     display: flex;
@@ -375,6 +399,7 @@ header {
 }
 p > a {
     font-weight: 400;
+    font-size: 1rem;
 }
 .location-card-info {
     display: flex;
@@ -545,6 +570,9 @@ p > a {
     .title {
         font-size: 2.4rem;
     }
+    .section-title {
+        text-align: center;
+    }
     .pp-logo {
         max-width: 35px;
     }
@@ -579,7 +607,7 @@ p > a {
     .plantpot-container {
         display: block;
         height: 1020px;
-        margin-top: -6rem;
+        margin-top: -7rem;
     }
     .plant-text {
         grid-column: none;
@@ -598,6 +626,7 @@ p > a {
         transform: scale(0.6);
     }
     .blob-img {
+        top: 30px;
         display: block;
         width: 500px;
     }
@@ -629,7 +658,7 @@ p > a {
     }
     .inline-svg {
         display: block;
-        margin-bottom: 0;
+        margin-bottom: 0.2rem;
         padding: 0 1rem 0 0;
         max-width: 32px;
     }
@@ -637,7 +666,10 @@ p > a {
         font-size: 0.9rem;
     }
     .location-card-info p {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+    }
+    .location-card-info a {
+        font-size: 0.75rem;
     }
     .gallery {
         row-gap: 2.5rem;
