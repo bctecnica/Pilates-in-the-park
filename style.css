@@ -312,7 +312,7 @@ header {
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     padding: 2rem 0rem;
     width: 88%;
     margin: auto;
@@ -337,6 +337,7 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 1rem;
+    padding: .5rem;
 }
 .card h4 {
     padding-top: 1rem;
