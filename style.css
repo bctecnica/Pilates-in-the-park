@@ -289,9 +289,9 @@ header {
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     padding: 2rem 0rem;
-    width: 90%;
+    width: 88%;
     margin: auto;
     row-gap: 3rem;
     column-gap: 3rem;
@@ -344,8 +344,8 @@ header {
 
 /* GOOGLE MAPS */
 #map {
-    height: 500px;
-    width: 85%;
+    height: 600px;
+    width: 87%;
     margin: 0rem auto;
     margin-bottom: 4rem;
     border-radius: 10px;
@@ -356,7 +356,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem 0rem;
-    width: 90%;
+    width: 92%;
     margin: auto;
 }
 .location-card {
@@ -641,6 +641,7 @@ p > a {
     }
     .gallery {
         row-gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     }
     #shop {
         font-size: 1.6rem;
