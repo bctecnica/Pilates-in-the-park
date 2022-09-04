@@ -373,6 +373,9 @@ header {
     border-radius: 1rem;
     z-index: 3;
 }
+p > a {
+    font-weight: 400;
+}
 .location-card-info {
     display: flex;
     flex-direction: column;
