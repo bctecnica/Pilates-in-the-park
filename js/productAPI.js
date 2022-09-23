@@ -81,7 +81,7 @@ export const apiCall = [
         {
             id: 2,
             product_name: "Resistance Ring",
-            image: "images/product-images/Resistance-Ring.jpg",
+            image: "images/product-images/resistance-Ring.jpg",
             price: 10,
             stock_count: 87,
         },
