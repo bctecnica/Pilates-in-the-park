@@ -27,6 +27,7 @@ h4 {
     width: 88%;
     font-weight: 600;
     margin: 0 auto;
+    margin-top: 5rem;
 }
 
 /* TOP NAV */
@@ -334,7 +335,7 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 .card h4 {
     font-weight: 400;
@@ -362,6 +363,75 @@ header {
 .card img {
     aspect-ratio: 2 / 1.6;
     border-radius: 1rem;
+}
+#cart-popup {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background: linear-gradient(90deg, rgb(254, 216, 58), rgb(233, 8, 132));
+    color: #fff;
+    border: white 1px solid;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 50px;
+}
+#cart-popup.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 4s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 50px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 50px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.cart-icon{
+    margin-bottom: -.4rem;
+    margin-right: .5rem;
 }
 
 /* GOOGLE MAPS */
@@ -571,7 +641,6 @@ p > a {
     }
     .section-title {
         text-align: center;
-        margin-top: 6rem;
     }
     .pp-logo {
         max-width: 35px;

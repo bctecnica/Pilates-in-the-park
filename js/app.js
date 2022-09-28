@@ -38,17 +38,18 @@ async function generateProductCards() {
                     <div class="card-text">
                       <h4>${data[0][i].product_name}</h4>
                       <p>£${data[0][i].price.toFixed(2)}</p>
-                      <h6>Add To Cart</h6>
+                      <h6 class="add-btn">Add To Cart</h6>
                     </div>
                   </div> 
                   `;
         gallery.appendChild(productCard);
     }
-    console.log(renderedCard);
     if (renderedCard >= 6) {
         more.style.display = "none";
     }
     renderedCard += 6;
+
+    addToCartListener();
 }
 
 generateProductCards();
@@ -56,3 +57,19 @@ generateProductCards();
 more.addEventListener("click", () => {
     generateProductCards();
 });
+
+// Adds add to cart click listeners to all rendered cards
+var popup = document.getElementById("cart-popup");
+
+function addToCartListener() {
+    const addBtn = document.querySelectorAll(".add-btn");
+    addBtn.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            console.log("clicked");
+            popup.className = "show";
+            setTimeout(function () {
+                popup.className = popup.className.replace("show", "");
+            }, 4500);
+        });
+    });
+}
