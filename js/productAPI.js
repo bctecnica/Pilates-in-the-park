@@ -30,11 +30,11 @@ export const apiCall = [
             stock_count: 0,
         },
         {
-            id: 7,
-            product_name: "Weighted Hoop",
-            image: "images/product-images/weighted-hoop.jpg",
-            price: 27,
-            stock_count: 19,
+            id: 5,
+            product_name: "Foam Roller",
+            image: "images/product-images/foam-roller.jpg",
+            price: 24.99,
+            stock_count: 39,
         },
         {
             id: 10,
@@ -72,11 +72,11 @@ export const apiCall = [
             stock_count: 58,
         },
         {
-            id: 5,
-            product_name: "Foam Roller",
-            image: "images/product-images/foam-roller.jpg",
-            price: 24.99,
-            stock_count: 39,
+            id: 7,
+            product_name: "Weighted Hoop",
+            image: "images/product-images/weighted-hoop.jpg",
+            price: 27,
+            stock_count: 19,
         },
         {
             id: 2,
